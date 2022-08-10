@@ -33,8 +33,8 @@ def view():
 
 def add():
     name = input('Account Name: ')
-    pwd = input("Password: ")
-    email = input("Email: ")
+    email = input("Password: ")
+    pwd = input("Email: ")
 
     with open('passwords.txt', 'a') as f:
         f.write(fer.encrypt(name.encode()).decode()+ "|" + fer.encrypt(email.encode()).decode() + "|" + fer.encrypt(pwd.encode()).decode()+ "\n")
